@@ -1,0 +1,119 @@
+/* COLOR PALETTE
+Light Pink - #FFE4D6
+Dark Pink - #FFB4A2
+Blue-Green - #77ACA2
+Light Blue-Green - #C0D8D4
+Off-Black - #252422
+*/
+
+/* BOX SIZING */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#value {
+    font-size: 200px;
+    font-weight: 100;
+}
+
+.btn {
+    font-size: 24px;
+}
+
+/* CONTENT */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #252422;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #FFE4D6;
+    border-radius: 16px;
+    padding: 3% 0 0 0;
+    width: 80%;
+}
+
+h1 {
+    color: #252422;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#value {
+    color: #77ACA2;
+    display: block;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.button-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #FFB4A2;
+    border: 0;
+    color: #252422;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+.btn:first-child {
+    border-bottom-left-radius: 16px;
+}
+
+.btn:last-child {
+    border-bottom-right-radius: 16px;
+}
+
+.btn:hover {
+    background-color: #77ACA2;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    background-color: #C0D8D4;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 750px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        width: 40%;
+    }
+}
